@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://media.licdn.com/dms/image/C5612AQHFS24TyOdTyA/article-cover_image-shrink_600_2000/0/1631788301339?e=2147483647&v=beta&t=oze0QUlnGVBZs59UrBYWBhgEId3IcgFgywlIB1t-B7s') no-repeat center center;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #555;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #FF6347;
+        }
+        a {
+            display: block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted closing price is: <span class="highlight">{{ prediction }}</span></p>
+        <p>Our model has analyzed historical data and predicted the closing price with high accuracy. The prediction is based on various market trends, previous price fluctuations, and other key factors.</p>
+        <p>If you'd like to try again with different parameters, feel free to adjust your inputs and explore more predictions!</p>
+        <a href="{{ url_for('home') }}">Go to Home</a>
+    </div>
+</body>
+</html>

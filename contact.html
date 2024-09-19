@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQASb5uQm1b7CXiQYJtidefjH-5LjO4Oyb8g&s') no-repeat center center;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #282aa7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #218838;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./static/pic.jpg" alt="Profile Picture" class="profile-pic"> <!-- Replace with your profile picture URL -->
+        <h1>Contact Us</h1>
+        
+        <p class="description">
+            Hi, I'm Pintu Verma, a passionate future data scientist and machine learning enthusiast. I specialize in 
+            developing predictive models and data-driven solutions. Feel free to reach out if you have any 
+            questions or collaboration opportunities!I hoe you like my project.
+        </p>
+        <p>Email: support@stockpredict.com</p>
+        <p>Phone: +1234567890</p>
+        <a href="{{ url_for('thank_you') }}">Thank You Page</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pintu-verma-05390b316/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/pintuverma9602" target="_blank">GitHub</a>
+            <a href="mailto:pintuverma5679@gmail.com">Email</a>
+        </div>
+    </div>
+</body>
+</html>

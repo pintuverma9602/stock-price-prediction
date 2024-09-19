@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://t4.ftcdn.net/jpg/06/19/50/93/360_F_619509311_JXFj8gGO1VvEC4g0j2Fpxr42bnv8peEn.jpg') no-repeat center center;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>We hope you enjoyed exploring our Stock Price Prediction project. Your interest and engagement are greatly appreciated!</p>
+        <p>Our goal is to provide valuable insights and help you make informed investment decisions. We are constantly working to improve our models and provide more accurate predictions.</p>
+        <p>If you have any feedback or suggestions, please feel free to reach out to us. We value your input and are always looking for ways to enhance our services.</p>
+        <p>Thank you for visiting, and we look forward to your next visit!</p>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</body>
+</html>

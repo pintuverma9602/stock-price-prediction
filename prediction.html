@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPSnMpbIqs8OENoHezniML2zjVP-X5xOJ4Dg&s') no-repeat center center;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #007BFF;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Stock Data</h1>
+        <p>Enter your answer to see the prediction.Hope it will be helpful for you and you like our service.</p>
+        <form action="{{ url_for('prediction') }}" method="POST">
+            <label for="open">Open Price:</label>
+            <input type="text" name="open" id="open" required>
+
+            <label for="high">High Price:</label>
+            <input type="text" name="high" id="high" required>
+
+            <label for="low">Low Price:</label>
+            <input type="text" name="low" id="low" required>
+
+            <label for="volume">Volume:</label>
+            <input type="text" name="volume" id="volume" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
